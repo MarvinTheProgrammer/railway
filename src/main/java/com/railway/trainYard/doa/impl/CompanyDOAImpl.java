@@ -13,7 +13,7 @@ import java.util.List;
 public class CompanyDOAImpl implements CompanyDOA {
 
     private final JdbcTemplate jdbcTemplate;
-    private final String getCompanies = "SELECT id, name FROM train_yard.company";
+    private final String getCompanies = "SELECT id, name FROM company";
 
     @Autowired
     public CompanyDOAImpl(JdbcTemplate jdbcTemplate){
